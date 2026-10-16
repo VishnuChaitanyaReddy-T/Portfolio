@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vishnu Chaitanya Reddy Thadigotla | AI &amp; ML Developer</title>
+  <meta name="description" content="Portfolio of Vishnu Chaitanya Reddy Thadigotla, a B.Tech CSE (AIML) student building machine learning models, data dashboards and robotics automation in Python.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="brand" href="#top">Vishnu Chaitanya</a>
+  <nav aria-label="Main">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Vishnu Chaitanya Reddy Thadigotla</h1>
+      <p class="lead">B.Tech student in Computer Science (AIML) who builds models that predict, classify and control: from ethanol–water equilibrium to ride demand to a cooling system.</p>
+      <p class="sub">Looking for an entry-level Python &amp; AI Developer role.</p>
+      <div class="actions">
+        <a class="btn primary" href="Vishnu_Chaitanya_Reddy_Thadigotla_Resume.pdf" download>Download resume</a>
+        <a class="btn" href="https://github.com/VishnuChaitanyaReddy-T" target="_blank" rel="noopener">See my GitHub</a>
+      </div>
+    </div>
+
+    <figure class="vle" aria-labelledby="vle-title">
+      <figcaption id="vle-title">
+        <strong>Ethanol–water at 1 atm.</strong> Drag the slider to see how much richer the vapor is than the liquid.
+      </figcaption>
+      <svg id="vle-plot" viewBox="0 0 520 520" role="img" aria-label="Vapor-liquid equilibrium diagram for ethanol and water, with an azeotrope at about 0.894 mole fraction ethanol"></svg>
+      <div class="vle-controls">
+        <label for="vle-x">Ethanol in liquid (mole fraction): <output id="vle-x-out">0.40</output></label>
+        <input id="vle-x" type="range" min="0" max="1" step="0.005" value="0.40">
+        <p id="vle-readout" class="readout" aria-live="polite"></p>
+      </div>
+      <p class="note">Curve drawn from approximate literature data for illustration. It is not the output of my ANN model.</p>
+    </figure>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="block">
+    <h2>About</h2>
+    <div class="about-layout">
+      <figure class="portrait">
+        <img src="photo.jpg" width="800" height="1000" alt="Portrait of Vishnu Chaitanya Reddy Thadigotla, smiling, wearing glasses and a brown t-shirt outdoors under trees" loading="lazy">
+      </figure>
+      <div class="about-body">
+        <p class="prose">I study Computer Science and Engineering (AIML) at Mohan Babu University with a CGPA of 8.00. My coursework covers Artificial Intelligence, Software Engineering and Statistics, and I put it to work in Python: machine learning models, deep neural networks, exploratory data analysis and interactive dashboards. I have also worked on robotics automation, simulating a Spot Robot prototype during an internship at ROBO AI.</p>
+        <dl class="facts">
+        <div><dt>University</dt><dd>Mohan Babu University, Tirupati</dd></div>
+        <div><dt>Degree</dt><dd>B.Tech, CSE (AI &amp; Machine Learning)</dd></div>
+        <div><dt>Years</dt><dd>Jun 2022 – Jul 2026 (expected)</dd></div>
+        <div><dt>CGPA</dt><dd>8.00 / 10.00 (IV-semester SGPA 8.41)</dd></div>
+        <div><dt>Top grades</dt><dd>Artificial Intelligence, Software Engineering and Statistics for Engineers (A+)</dd></div>
+      </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="block">
+    <h2>Skills</h2>
+    <dl class="skills">
+      <div><dt>Languages</dt><dd>Python (OOP, data structures, scripting), SQL</dd></div>
+      <div><dt>AI and machine learning</dt><dd>Supervised learning, deep learning (ANN, CNN basics), model evaluation, hyperparameter tuning, Scikit-Learn, TensorFlow</dd></div>
+      <div><dt>Data and analytics</dt><dd>NumPy, Pandas, Matplotlib, Seaborn, feature engineering, statistics and probability, Power BI, Advanced Excel</dd></div>
+      <div><dt>Computer science</dt><dd>Artificial intelligence, software engineering, database management systems, theory of computation</dd></div>
+      <div><dt>Tools</dt><dd>Git, GitHub, REST APIs, virtual environments, SolidWorks, DWSIM</dd></div>
+    </dl>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="block">
+    <h2>Experience</h2>
+    <article class="entry">
+      <header>
+        <h3>Robotics &amp; AI Intern, ROBO AI</h3>
+        <p class="when">Apr 2024 – Jun 2024</p>
+      </header>
+      <ul>
+        <li>Simulated movements and AI decision-making logic for a Spot Robot prototype using Python.</li>
+        <li>Used SolidWorks for mechanical design and hardware component integration.</li>
+        <li>Tested autonomous locomotion and robotics kinematics in a virtual simulation environment.</li>
+        <li>Trained on real-time sensor processing and intelligent automation systems.</li>
+      </ul>
+    </article>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="block">
+    <h2>Projects</h2>
+
+    <article class="project featured">
+      <header>
+        <h3>Vapor-Liquid Equilibrium Prediction with an ANN</h3>
+        <p class="stack">Python, TensorFlow, Scikit-learn, Pandas, Matplotlib, DWSIM</p>
+        <p class="award">1st place, IoT Exposition (Smart Cooler Project)</p>
+      </header>
+      <ul>
+        <li>Designed an ANN regression model to predict ethanol–water vapor-liquid equilibrium, reaching an R<sup>2</sup> of 0.9988.</li>
+        <li>Checked the model against Raoult's Law calculations and correctly located the azeotropic composition. The diagram at the top of this page shows that point.</li>
+        <li>Cleaned and transformed experimental data and plotted thermodynamic results with Pandas and Matplotlib.</li>
+      </ul>
+    </article>
+
+    <article class="project">
+      <header>
+        <h3>Ride-Hailing Demand &amp; Surge Pricing Analytics</h3>
+        <p class="stack">Python, Power BI, Advanced Excel</p>
+      </header>
+      <ul>
+        <li>Cleaned missing records in OLA ride datasets and prepared time-based features with Pandas.</li>
+        <li>Analyzed surge pricing patterns and trip statistics with Excel pivot tables and aggregation logic.</li>
+        <li>Built an interactive Power BI dashboard showing booking trends, passenger demand and fleet distribution.</li>
+      </ul>
+    </article>
+
+    <article class="project">
+      <header>
+        <h3>AI-Powered Customer Sentiment Classifier</h3>
+        <p class="stack">Python, Scikit-Learn, NLTK, Pandas</p>
+      </header>
+      <ul>
+        <li>Built an NLP pipeline that sorts raw text into positive, negative and neutral sentiment.</li>
+        <li>Implemented text cleaning, tokenization, lemmatization and TF-IDF feature extraction.</li>
+        <li>Trained Logistic Regression and Naive Bayes models and tuned accuracy with cross-validation.</li>
+      </ul>
+    </article>
+
+    <article class="project">
+      <header>
+        <h3>Smart IoT Environmental Cooler Controller</h3>
+        <p class="stack">Python, IoT microcontroller, sensors</p>
+        <p class="award">Best Innovation trophy and certificate</p>
+      </header>
+      <ul>
+        <li>Designed an automated cooling system driven by temperature and humidity sensor data.</li>
+        <li>Wrote Python scripts that track live readings and control relay switches and cooling thresholds.</li>
+      </ul>
+    </article>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section id="achievements" class="block">
+    <h2>Honors</h2>
+    <ul class="honors">
+      <li><strong>1st place and Best Innovation trophy</strong> at the IoT Exposition for the Smart Cooler project.</li>
+      <li><strong>Perfect 10 grade points</strong> in Leadership, Innovation &amp; Entrepreneurship and in Environmental Science.</li>
+    </ul>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="block contact">
+    <h2>Contact</h2>
+    <p class="prose">I'm open to entry-level Python and AI roles. Email is the quickest way to reach me.</p>
+    <ul class="links">
+      <li><a href="mailto:sunnytadigotla2005@gmail.com">sunnytadigotla2005@gmail.com</a></li>
+      <li><a href="mailto:vishnutadigotla2005@gmail.com">vishnutadigotla2005@gmail.com</a></li>
+      <li><a href="https://github.com/VishnuChaitanyaReddy-T" target="_blank" rel="noopener">github.com/VishnuChaitanyaReddy-T</a></li>
+      <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+    </ul>
+    <p class="where">Kamalapuram, Kadapa, Andhra Pradesh, India</p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year">2026</span> Vishnu Chaitanya Reddy Thadigotla</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
